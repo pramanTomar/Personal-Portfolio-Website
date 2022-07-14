@@ -1,0 +1,502 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+/* utility classes 
+*/
+.btn{
+    padding: 15px 20px;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    font-weight: 600;
+    font-family: 'Verdana';
+    border-radius: 20px;
+    border: 1px solid rgb(100, 100, 100);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(255, 196, 0);
+    color: black;
+}
+
+
+.heading{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.main-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 155px;
+    flex-wrap: wrap;
+}
+
+.inner-box{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+/* nav styling */
+#navigation{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    padding: 14px 10%;
+    color: white;
+}
+
+#navigation::before{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: "";
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    opacity: 0.7;
+    z-index: -2;
+}
+
+#navigation ul{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+#navigation h1{
+    font-size: 35px;
+    font-weight: 1000;
+}
+
+.nav-item{
+    padding: 10px;
+    list-style: none;
+}
+
+.nav-item a{
+    color: white;
+    text-decoration: none;
+    padding:0px 10px;
+    font-weight: 500;
+}
+
+.nav-item a:hover{
+    color: #ffbd39;
+   
+}
+
+.nav-item>a:active{
+    color: #ffbd39;
+    text-decoration: underline;
+}
+
+.ham img {
+    width: 50px;
+    border-radius: 10px;
+    display: none;
+}
+
+@media (max-width:700px){
+    #navigation ul{
+        display: none;
+    }
+    .ham img{
+        display: block;
+        width: 40px;
+        border-radius: 10px;
+    }
+    #navigation{
+        justify-content: space-between;
+    }
+}
+
+/* home section styling */
+
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+#home-box{
+    width: 60%;
+    max-width: 790px;
+    height: 512px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+#home-box::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    max-width: 385px;
+    height: 100%;
+    background: url('/Projects/Personal Portfolio/images/Praman\ Passport\ Photo2.jpeg') no-repeat center center/cover;
+    z-index: -1;
+    border-radius: 122px;
+    opacity: 0.6;
+    display: none;
+}
+
+.yellow{
+    color: #ffbd39;
+}
+
+.right-box img{
+    width: 110%;
+    max-width: 340px;
+    border-radius: 250px;
+}
+
+.left-box{
+    width: 50%;
+    margin: 10px;
+}
+.right-box{
+    width: 50%;
+    margin: 10px;
+}
+
+.left-box h1{
+    margin: 10px 0px;
+    font-size: 3.2rem;
+}
+
+
+.left-box h3{
+    margin: 18px 0px;
+}
+
+@media (max-width:1000px){
+    #home-box{
+        width: 80%;
+    }
+    .left-box h1{
+        font-size: 2.7rem;
+    }
+}
+
+@media (max-width:850px){
+    .right-box{
+        display: none;
+    }
+    .left-box{
+        margin-top: auto;
+        margin-bottom: 37px;
+        z-index: -1;
+    }
+    .left-box .btn{
+        display: block;
+        margin: auto;
+    }
+    .left-box h1, .left-box h3{
+        text-align: center;
+    }
+    .right-box img{
+        display: block;
+        margin: auto;
+    }
+    #home-box::before{
+        display: inline-block;
+    }
+}
+
+
+/* about section styling */
+
+.right-content .heading{
+    text-align: left;
+}
+
+.left-image img{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20%;
+}
+
+.right-content{
+    width: 50%;
+    margin-bottom: auto;
+    text-align: left;
+}
+
+.left-image{
+    width: 40%;
+}
+
+
+.about-box{
+    flex-direction: row;
+    width: 65%;
+    max-width: 1000px;
+    justify-content: space-evenly;
+}
+
+.about-table{
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-table li{
+    margin: 15px 0px;
+    list-style: none;
+    text-align:left;
+}
+.right-content .para , .right-content .table-ans{
+    color: rgb(138, 138, 138);
+}
+
+.right-content .para{
+    margin: 33px 0px;
+}
+
+.btn-cv{
+    margin: 15px 0px;
+}
+
+@media (max-width:1000px){
+    .about-box{
+        width: 95%;
+    }
+}
+
+@media (max-width:700px){
+    .left-image{
+        display: none;
+    }
+    .right-content{
+        width: auto;
+    }
+}
+
+
+
+/* Skills Section Styling */
+/* .skills-section{
+    flex-direction: column;
+    height: 500px;
+} */
+
+.bars-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills-inner-box{
+    flex-direction: column;
+}
+
+.left-bar-box, .right-bar-box{
+    width: 50%;
+    margin: 30px 1px;
+}
+
+.line{
+    height: 10px;
+    background-color: rgb(36, 36, 36);
+    width: 92%;
+    position: relative;
+}
+
+.skill{
+    margin: 35px 5px 5px 0px;
+    position: relative;
+}
+
+.line::after{
+    content: "";
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #ffbd36;
+}
+
+.percent {
+    position: absolute;
+    right: 30px;
+}
+
+.line-1::after{
+    width: 90%;
+}
+.line-2::after{
+    width: 80%;
+}
+.line-3::after{
+    width: 50%;
+}
+.line-4::after{
+    width: 70%;
+}
+.line-5::after{
+    width: 80%;
+}
+.line-6::after{
+    width: 70%;
+}
+
+.inner-box .para{
+    color: rgb(138, 138, 138);
+    margin: 30px 0px 0px 0px;
+}
+
+
+@media (max-width:1000px){
+    .skills-inner-box{
+        width: 85%;
+        margin-left: 30px;
+    }
+    .inner-box{
+        width: 85%;
+    }
+}
+
+@media (max-width:700px){
+    .bars-box{
+        display: block;
+    }
+    .left-bar-box, .right-bar-box{
+        width: 100%;
+    }
+}
+
+
+/* Contact Section Styling */
+
+.contact-box{
+    margin: auto;
+    margin-top: 50px;
+    background-color: #191919;
+    padding-bottom: 40px;
+}
+.contact-item-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 40px 0px;
+    flex-wrap: wrap;
+}
+
+.icon-image{
+    /* background-color: white; */
+    border-radius: 20px;
+    
+}
+
+.items img{
+    width: 90px;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+#contact .heading-box{
+    margin: 10px 10px;
+} 
+
+#contact .para-box{
+    margin: 30px 20px;
+}
+
+.items a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-top: 12px;
+}
+
+
+/* Form Design */
+.form-box{
+    background-color: white;
+    color: black;
+    width: 65%;
+    padding: 25px 30px;
+}
+
+.form-box label{
+    display: block;
+    margin: 5px 10px;
+}
+
+.form-box input, .form-box textarea{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 16px;
+    border-radius: 8px;
+    border: 2px solid rgb(206, 212, 218);
+    resize: none;
+}
+
+@media (max-width:700px){
+    .form-box{
+        width: 85%;
+        padding: 10px 23px ;
+    }
+}
+
+
+/* footer design  */
+
+.footer-box, .copyright-box{
+    text-align: center;
+}
+
+footer{
+    background-color: #191919;;
+    margin-top: 40px;
+    padding: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
