@@ -155,7 +155,7 @@ body{
     width: 100%;
     max-width: 385px;
     height: 100%;
-    background: url('/Projects/Personal Portfolio/images/Praman\ Passport\ Photo2.jpeg') no-repeat center center/cover;
+    background: url('images/Praman Passport Photo2.jpeg') no-repeat center center/cover;
     z-index: -1;
     border-radius: 122px;
     opacity: 0.6;
