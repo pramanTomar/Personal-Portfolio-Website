@@ -4,3 +4,5 @@ Tech Used:
 1) HTML
 2) CSS
 3) JavaScript
+Also hosted it using GitHub Pages
+url: https://pramantomar.github.io/Personal-Portfolio-Website/
