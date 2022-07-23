@@ -15,15 +15,22 @@
     <nav id="navigation">
       <h1>Portfolio.</h1>
       <ul>
-        <li class="nav-item"><a href="#">Home</a></li>
-        <li class="nav-item"><a href="#">About</a></li>
-        <li class="nav-item"><a href="#">Skills</a></li>
-        <li class="nav-item"><a href="#">Contact</a></li>
+        <li class="nav-item"><a href="#home">Home</a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#skills">Skills</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
       </ul>
       <div class="ham">
         <img src="images/Menu.jpg" alt="">
       </div>
     </nav>
+
+    <div class="side-bar">
+      <div class="nav-links"><a href="#home">Home</a></div>
+      <div class="nav-links"><a href="#about">About</a></div>
+      <div class="nav-links"><a href="#skills">Skills</a></div>
+      <div class="nav-links"><a href="#contact">Contact</a></div>
+    </div>
 
     <!-- Home Section   -->
 
@@ -34,7 +41,9 @@
           <h1>I'm <span class="yellow">Praman</span></h1>
           <h1 class="yellow">Tomar</h1>
           <h3>A Coding Enthusiast</h3>
-          <button class="btn">HIRE ME!</button>
+          <form action="mailto:pramantomar@gmail.com subject=Congratulation">
+            <input class="btn" type="submit" value="Hire Me">
+          </form>
         </div>
         <div class="right-box">
           <img
@@ -99,7 +108,7 @@
                 <h1 class="heading">SKILLS</h1>
             </div>
             <div class="para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita minima quidem ab cum impedit officia odit, veritatis reiciendis quia?
+              Below, I represent a subset of my Skill Set.
             </div>
             <div class="bars-box">
                 <div class="left-bar-box">
@@ -131,7 +140,7 @@
           <h1 class="heading">Let Us Connect</h1>
         </div>
         <div class="para-box">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, inventore.
+          Get In Touch.
         </div>
         <div class="contact-item-box">
           <div id="item-1" class="items">
@@ -139,7 +148,6 @@
               <img src="images/Instagram.jpg" alt="" >
               <a href="https://www.instagram.com/praman_tomar/" target="_blank">Instagram</a>
             </div>
-            
           </div>
           <div id="item-2" class="items">
             <div class="icon-image">
@@ -167,7 +175,7 @@
           </div>
         </div>
         <div class="form-box">
-          <form action="">
+          <form action="mailto:pramantomar@gmail.com subject='let us connect'">
             <div class="form-item">
               <input type="text" name="" id="" placeholder="Your Name">
             </div>
@@ -196,7 +204,7 @@
       </div>
     </footer>
 
-
+    <script src="index.js"></script>
 
   </body>
 </html>
