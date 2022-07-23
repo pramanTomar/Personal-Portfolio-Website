@@ -10,6 +10,10 @@ body{
     color: white;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* utility classes 
 */
 .btn{
@@ -39,7 +43,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 155px;
+    padding-top: 155px;
     flex-wrap: wrap;
 }
 
@@ -63,6 +67,7 @@ body{
     display: flex;
     padding: 14px 10%;
     color: white;
+    z-index: 1;
 }
 
 #navigation::before{
@@ -128,6 +133,33 @@ body{
     #navigation{
         justify-content: space-between;
     }
+    .side-bar{
+        display: none;
+    }
+}
+
+.side-bar{
+    position: relative;
+    right: 0px;
+    top: 0px;
+    padding: 20px;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+
+.side-bar .nav-links{
+    padding: 10px;
+}
+
+.side-bar .nav-links a{
+    text-decoration: none;
+    color: white;
+}
+
+.side-bar .nav-links a:hover{
+    color: rgb(255, 187, 0);
 }
 
 /* home section styling */
@@ -136,7 +168,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 35px;
+    padding-top: 50px;
 }
 
 #home-box{
@@ -155,8 +187,8 @@ body{
     width: 100%;
     max-width: 385px;
     height: 100%;
-    background: url('images/Praman Passport Photo2.jpeg') no-repeat center center/cover;
-    z-index: -1;
+    background: url('images/Praman\ Passport\ Photo2.jpeg') no-repeat center center/cover;
+    z-index: -2;
     border-radius: 122px;
     opacity: 0.6;
     display: none;
@@ -207,7 +239,6 @@ body{
     .left-box{
         margin-top: auto;
         margin-bottom: 37px;
-        z-index: -1;
     }
     .left-box .btn{
         display: block;
@@ -222,6 +253,12 @@ body{
     }
     #home-box::before{
         display: inline-block;
+    }
+}
+
+@media (max-width:450px){
+    #home-box::before{
+        border-radius: 80px;
     }
 }
 
@@ -426,7 +463,8 @@ body{
 } 
 
 #contact .para-box{
-    margin: 30px 20px;
+    color: rgb(138, 138, 138);
+    padding: 0px 34px !important;
 }
 
 .items a{
@@ -472,6 +510,7 @@ body{
 
 .footer-box, .copyright-box{
     text-align: center;
+    font-size: 0.8rem;
 }
 
 footer{
